@@ -9,9 +9,9 @@ pub fn build(b: *std.build.Builder) void {
     };
 
     const kernel = b.addExecutable("kernel", "src/main.zig");
-    kernel.setLinkerScriptPath("src/kernel.lds");
+    kernel.setLinkerScriptPath(.{ .path = "src/kernel.lds" });
     kernel.addAssemblyFile("src/asm/boot.s");
-    kernel.addAssemblyFile("src/asm/trpa.s");
+    kernel.addAssemblyFile("src/asm/trap.s");
 
     kernel.setTarget(target);
     kernel.setBuildMode(mode);
