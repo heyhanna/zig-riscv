@@ -9,7 +9,7 @@ and running the kernel should provide a basic kernel that halts on start.
 ```txt
 src - base zig code for the kernel
 src/asm - assembly files for booting and similar
-src/kernel.lds - linker script to link the kernel
+src/linker/kernel.lds - linker script to link the kernel
 build.zig - the build script to compile the kernel
 ```
 
