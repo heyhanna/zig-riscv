@@ -18,7 +18,7 @@ build.zig - the build script to compile the kernel
 ```txt
 BSD Zero Clause License
 
-Copyright (c) 2022, Hanna
+Copyright (c) 2022, Hanna Rose
 
 Permission to use, copy, modify, and/or distribute this software for any
 purpose with or without fee is hereby granted.
